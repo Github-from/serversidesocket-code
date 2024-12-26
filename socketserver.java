@@ -5,7 +5,7 @@ import java.net.Socket;
 public class socketserver {
     public static void main(String[] args) {
         try(ServerSocket serverSocket=new ServerSocket(30699)){
-            System.out.println("server is running on port 12345");
+            System.out.println("server is running on port 30699");
             Socket clientsocket=serverSocket.accept();
             System.out.println("client connected: "+ clientsocket);
             BufferedReader in=new BufferedReader(new InputStreamReader(clientsocket.getInputStream()));
